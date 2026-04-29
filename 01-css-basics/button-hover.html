@@ -1,0 +1,29 @@
+<!-- Create a button that:
+-Changes background color smoothly
+-Slightly grows (scale)
+-Has a soft shadow on hover
+
+You must use:
+-transition
+-transform
+
+ Bonus: Add a slight delay so it feels premium -->
+
+<button>Click Me</button>
+<style>
+  button{
+    padding: 5% 12%;
+    border-radius: 10%;
+    margin: 50%;
+    background-color: red;
+    transition: background-color 0.5s ease, transform 0.5s ease 0.2s;
+  }
+  button:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  button:active {
+  transform: scale(0.95);
+}
+</style>
